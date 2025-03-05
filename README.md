@@ -10,7 +10,7 @@
 ---
 
 ## 🏛️ About Me
-I am a dedicated researcher in Industrial Engineering with a strong focus on **functional data analysis, statistical process monitoring, and generalized additive models**.  
+I am an Assistant Professor of Statistics in Industrial Engineering with a strong focus on **functional data analysis, statistical process monitoring, and generalized additive models**.  
 Currently, I work at the **Department of Industrial Engineering, University of Naples Federico II**.
 
 ---
@@ -20,38 +20,41 @@ Currently, I work at the **Department of Industrial Engineering, University of N
 - 📈 **Statistical Process Monitoring**
 - 📉 **Generalized Additive Models**
 - 🏭 **Industrial Engineering**
-- 🚢 **Maritime Transport & Emissions Monitoring**
 
 ---
 
 ## 🎓 Education
-- 🎓 **Ph.D. in Industrial Engineering**  
+- 🎓 **PhD in Industrial Engineering**  
   *University of Naples Federico II*, **2020**
 
-- 🎓 **M.Sc. in Engineering Management**  
+- 🎓 **MSc in Engineering Management**  
   *University of Naples Federico II*, **2016**
 
-- 🎓 **B.Sc. in Engineering Management for Logistics and Production**  
+- 🎓 **BSc in Engineering Management for Logistics and Production**  
   *University of Naples Federico II*, **2013**
 
 ---
 
 ## 💼 Professional Experience
-- 🏢 **Researcher (RTD/A)**  
+- **Assistant Professor (fixed-term)**  
   *Department of Industrial Engineering, University of Naples Federico II*  
-  **2022 - 2024**
+  **2022 - Present**
 
-- 🔬 **Post-doctoral Researcher**  
+- **Postdoctoral Researcher**  
   *Department of Industrial Engineering, University of Naples Federico II*  
   **2021**
+  
+- **Postgraduate Researcher**  
+  *Department of Industrial Engineering, University of Naples Federico II*  
+  **2020**
 
 ---
 
 ## 🌍 Visiting Positions
-- 🎓 **Upcoming:** *H. Milton Stewart School of Industrial and Systems Engineering, Georgia Institute of Technology*, **March-April 2025**
-- 🎓 *School of Mathematics, University of Bristol*, **February-September 2019**
-- 🎓 *Department of Statistics, University of Padova*, **September 2017-July 2018**
-- 🎓 *Department of Civil and Mechanical Engineering, Technical University of Denmark (DTU)*, **September-October 2013**
+- **Upcoming:** *H. Milton Stewart School of Industrial and Systems Engineering, Georgia Institute of Technology*, **Mar-Apr 2025**
+- *School of Mathematics, University of Bristol*, **Feb-Sep 2019**
+- *Department of Statistics, University of Padova*, **Sep 2017-Jul 2018**
+- *Department of Civil and Mechanical Engineering, Technical University of Denmark (DTU)*, **Sep-Oct 2013**
 
 ---
 
