@@ -15,11 +15,11 @@ Currently, I work at the **Department of Industrial Engineering, University of N
 
 ---
 
-## 🔬 Research Interests
-- 📊 **Functional Data Analysis**
-- 📈 **Statistical Process Monitoring**
-- 📉 **Generalized Additive Models**
-- 🏭 **Industrial Engineering**
+## 📊 Research Interests
+- **Functional Data Analysis**
+- **Statistical Process Monitoring**
+- **Generalized Additive Models**
+- **Industrial Engineering**
 
 ---
 
