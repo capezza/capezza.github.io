@@ -1,0 +1,111 @@
+/* Ensure full-page background is white */
+body, html {
+    background-color: #ffffff !important;  /* Completely white background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    font-family: Raleway, sans-serif;
+}
+
+/* Ensure header and footer are also completely white */
+header, footer {
+    background-color: #ffffff !important;  /* Force white background */
+    color: #333; /* Ensure text remains visible */
+    text-align: center;
+    padding: 1rem;
+    border: none; /* Remove any borders */
+    box-shadow: none; /* Ensure no shadows */
+}
+
+/* Ensure the main content area also has a white background */
+main {
+    background-color: #ffffff !important;
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 0; /* Remove rounded corners */
+    box-shadow: none; /* Remove any default shadows */
+}
+
+/* Ensure sections are also white */
+section {
+    background-color: #ffffff !important;
+    padding: 1rem;
+    border-bottom: 1px solid #eaeaea; /* Light gray border for section separation */
+}
+
+/* Style navigation links */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Style contact list */
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px; /* Adjust spacing */
+}
+
+.contact-list li img {
+    width: 18px;  /* Bullet-sized logos */
+    height: 18px; /* Keep aspect ratio */
+    margin-right: 8px; /* Space between logo and text */
+    vertical-align: middle;
+}
+
+.contact-list li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.contact-list li a:hover {
+    text-decoration: underline;
+}
+
+/* Style CV list */
+.cv-list {
+    list-style: none;
+    padding: 0;
+}
+
+.cv-list li {
+    display: flex;
+    align-items: center; /* Align logo and text in the middle */
+    margin-bottom: 12px; /* Space between list items */
+}
+
+.cv-list li img {
+    width: auto;  /* Maintain original aspect ratio */
+    height: 20px; /* Adjust height to be slightly larger for better visibility */
+    margin-right: 10px; /* Space between logo and text */
+    flex-shrink: 0; /* Prevents the logo from resizing */
+}
+
+.cv-list li div span {
+    display: inline;  /* Ensures text remains on the same line */
+    white-space: nowrap;  /* Prevents breaking into a new line */
+}
+
