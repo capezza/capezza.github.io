@@ -1,113 +1,154 @@
-/* Ensure full-page background is white */
+/* GLOBAL */
 body, html {
-    background-color: #ffffff !important;  /* Completely white background */
-    color: #333;
+    background-color: #121212;
+    color: #e0e0e0;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    line-height: 1.1;
+    font-size: 17px;
+    line-height: 1.6;
 }
 
-/* Ensure header and footer are also completely white */
-header, footer {
-    background-color: #ffffff !important;  /* Force white background */
-    color: #333; /* Ensure text remains visible */
+/* HEADER */
+header {
+    background-color: #1e1e1e;
     text-align: center;
-    padding: 1rem;
-    border: none; /* Remove any borders */
-    box-shadow: none; /* Ensure no shadows */
+    padding: 2rem 1rem 1rem 1rem;
+    border-bottom: 1px solid #2c2c2c;
 }
 
-/* Ensure the main content area also has a white background */
-main {
-    background-color: #ffffff !important;
-    max-width: 800px;
-    margin: auto;
-    padding: 2rem;
-    border-radius: 0; /* Remove rounded corners */
-    box-shadow: none; /* Remove any default shadows */
+header h1 {
+    font-size: 2.4rem;
+    margin-bottom: 0.3rem;
+    color: #ffffff;
 }
 
-/* Ensure sections are also white */
-section {
-    background-color: #ffffff !important;
-    padding: 1rem;
-    border-bottom: 1px solid #eaeaea; /* Light gray border for section separation */
+header p {
+    font-size: 1.1rem;
+    color: #aaaaaa;
 }
 
-/* Style navigation links */
+header img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 1rem;
+    border: 4px solid #2c2c2c;
+}
+
+/* NAVIGATION */
 nav ul {
     list-style: none;
     padding: 0;
+    margin-top: 1rem;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 15px;
+    display: inline-block;
+    margin: 0 10px;
 }
 
 nav ul li a {
-    color: #333;
+    color: #80bfff;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Style contact list */
-.contact-list {
-    list-style: none;
-    padding: 0;
+/* MAIN CONTENT */
+main {
+    max-width: 850px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
 }
 
-.contact-list li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 8px; /* Adjust spacing */
+/* SECTIONS */
+section {
+    margin-bottom: 2.5rem;
+    background-color: #1e1e1e;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid #2c2c2c;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
 }
 
-.contact-list li img {
-    width: 18px;  /* Bullet-sized logos */
-    height: 18px; /* Keep aspect ratio */
-    margin-right: 8px; /* Space between logo and text */
-    vertical-align: middle;
+/* TITLES */
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
 }
 
-.contact-list li a {
+/* LINKS */
+a {
+    color: #80bfff;
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    font-size: 16px;
 }
 
-.contact-list li a:hover {
+a:hover {
     text-decoration: underline;
 }
 
-/* Style CV list */
-.cv-list {
-    list-style: none;
-    padding: 0;
+/* LISTS */
+ul {
+    padding-left: 1.2rem;
 }
 
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* CONTACT + CV */
+.contact-list li,
 .cv-list li {
     display: flex;
-    align-items: center; /* Align logo and text in the middle */
-    margin-bottom: 12px; /* Space between list items */
+    align-items: center;
+    margin-bottom: 0.75rem;
 }
 
-.cv-list li img {
-    width: auto;  /* Maintain original aspect ratio */
-    height: 20px; /* Adjust height to be slightly larger for better visibility */
-    margin-right: 10px; /* Space between logo and text */
-    flex-shrink: 0; /* Prevents the logo from resizing */
+.cv-list img {
+    height: 60px;               /* Make them visibly larger */
+    width: auto;                /* Keep aspect ratio */
+    background-color: #ffffff;  /* Ensure visibility on dark theme */
+    padding: 6px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    margin-right: 12px;
+    flex-shrink: 0;
 }
 
-.cv-list li div span {
-    display: inline;  /* Ensures text remains on the same line */
-    white-space: nowrap;  /* Prevents breaking into a new line */
+
+.contact-list li a,
+.cv-list li a {
+    font-weight: 500;
+    color: #e0e0e0;
+    font-size: 1rem;
 }
+
+/* Universal logo styling for both CV and contact sections */
+.contact-list img {
+    background-color: #ffffff;
+    padding: 4px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    max-width: 24px;  /* Keeps logos uniform */
+    height: auto;
+    object-fit: contain;
+    margin-right: 6px;
+}
+
+
+
+.inline-logo {
+    background-color: #ffffff;
+    padding: 3px;
+    border-radius: 4px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
 
