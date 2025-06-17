@@ -29,8 +29,8 @@ header p {
 }
 
 header img {
-    width: 160px;
-    height: 160px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 50%;
     margin-top: 1rem;
@@ -287,4 +287,19 @@ body.light-theme a:hover {
 
 body.preload {
     display: none;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.2rem; /* Smaller title */
+    }
+
+    header img {
+        width: 120px;
+        height: 120px;
+    }
+
+    header p {
+        font-size: 0.8rem; /* Slightly smaller subtitle text */
+    }
 }
