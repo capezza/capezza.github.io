@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (themeLabel) themeLabel.textContent = "";
             }
 
-            // Theme toggle logic
+            // Toggle event
             if (toggleCheckbox && themeLabel) {
                 toggleCheckbox.addEventListener("change", () => {
                     if (toggleCheckbox.checked) {
@@ -53,11 +53,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 lastUpdatedEl.textContent = `Last updated: ${formattedDate}`;
             }
 
-            // ✅ Now that header + footer are loaded, show the page
-            document.body.classList.remove("loading");
+            // ✅ Reveal page now that everything is loaded
+            document.body.classList.remove("preload");
         })
         .catch(err => {
             console.error("Error loading footer:", err);
-            document.body.classList.remove("loading"); // Ensure it's removed even on error
+            document.body.classList.remove("preload"); // Ensure it's visible even on error
         });
 });
