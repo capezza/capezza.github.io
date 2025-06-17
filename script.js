@@ -5,13 +5,11 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(data => {
             document.body.insertAdjacentHTML("afterbegin", data);
 
-            // Now that header is inserted, select elements
             const toggleCheckbox = document.getElementById("theme-toggle");
             const themeLabel = document.querySelector(".theme-label");
 
-            // Set theme based on saved preference
+            // Apply saved theme
             const savedTheme = localStorage.getItem("theme");
-
             if (savedTheme === "light") {
                 document.body.classList.add("light-theme");
                 if (toggleCheckbox) toggleCheckbox.checked = false;
@@ -22,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (themeLabel) themeLabel.textContent = "";
             }
 
-            // Add event listener to toggle switch
+            // Theme toggle logic
             if (toggleCheckbox && themeLabel) {
                 toggleCheckbox.addEventListener("change", () => {
                     if (toggleCheckbox.checked) {
@@ -35,8 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
                         localStorage.setItem("theme", "light");
                     }
                 });
-            } else {
-                console.warn("Theme toggle or label not found");
             }
         })
         .catch(err => {
@@ -56,5 +52,12 @@ document.addEventListener("DOMContentLoaded", function () {
             if (lastUpdatedEl) {
                 lastUpdatedEl.textContent = `Last updated: ${formattedDate}`;
             }
+
+            // ✅ Now that header + footer are loaded, show the page
+            document.body.classList.remove("loading");
+        })
+        .catch(err => {
+            console.error("Error loading footer:", err);
+            document.body.classList.remove("loading"); // Ensure it's removed even on error
         });
 });

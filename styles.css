@@ -284,3 +284,7 @@ body.light-theme a:hover {
   transform: translateX(26px);
   background-color: white; /* white circle for dark theme */
 }
+
+body.loading {
+    visibility: hidden;
+}
