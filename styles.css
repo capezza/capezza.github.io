@@ -102,12 +102,20 @@ ul li {
     margin-bottom: 0.5rem;
 }
 
-/* CONTACT + CV */
 .contact-list li,
 .cv-list li {
     display: flex;
     align-items: center;
     margin-bottom: 0.75rem;
+    padding-left: 0; /* default for small screens */
+}
+
+/* Add left padding only on larger screens */
+@media (min-width: 600px) {
+    .contact-list li,
+    .cv-list li {
+        padding-left: 8px;
+    }
 }
 
 .cv-list img {
@@ -121,13 +129,13 @@ ul li {
     flex-shrink: 0;
 }
 
-
 .contact-list li a,
 .cv-list li a {
     font-weight: 500;
     color: #e0e0e0;
     font-size: 1rem;
 }
+
 
 /* Universal logo styling for both CV and contact sections */
 .contact-list img {
