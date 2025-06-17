@@ -34,7 +34,6 @@ header img {
     object-fit: cover;
     border-radius: 50%;
     margin-top: 1rem;
-    border: 4px solid #2c2c2c;
 }
 
 /* NAVIGATION */
@@ -185,4 +184,103 @@ ul li {
         height: 40px;
         padding: 4px;
     }
+}
+
+/* LIGHT THEME OVERRIDES */
+body.light-theme, body.light-theme html {
+    background-color: #ffffff;
+    color: #121212;
+}
+
+body.light-theme header {
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+}
+
+body.light-theme header h1 {
+    color: #121212;
+}
+
+body.light-theme header p {
+    color: #555555;
+}
+
+body.light-theme nav ul li a {
+    color: #121212;
+}
+
+body.light-theme nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Similarly override section backgrounds and borders */
+body.light-theme section {
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    box-shadow: none;
+}
+
+body.light-theme h2 {
+    color: #121212; /* dark text for light background */
+}
+
+body.light-theme a {
+    color: #0066cc; /* or another visible blue */
+}
+
+body.light-theme a:hover {
+    text-decoration: underline;
+}
+
+/* Container */
+.theme-switch {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  user-select: none;
+  gap: 0.5rem;
+  color: inherit; /* keep text color consistent */
+}
+
+/* Hide the default checkbox */
+.theme-switch input[type="checkbox"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+/* The slider (the pill background) */
+.theme-switch .slider {
+  position: relative;
+  width: 50px;
+  height: 24px;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: background-color 0.3s ease;
+  flex-shrink: 0;
+}
+
+/* The circle inside the slider */
+.theme-switch .slider::before {
+  content: "";
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  top: 3px;
+  background-color: black;  /* black circle for light theme */
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* When checked (dark theme) */
+.theme-switch input:checked + .slider {
+  background-color: #444; /* darker background */
+}
+
+.theme-switch input:checked + .slider::before {
+  transform: translateX(26px);
+  background-color: white; /* white circle for dark theme */
 }
