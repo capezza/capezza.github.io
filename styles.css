@@ -106,28 +106,27 @@ ul li {
 .contact-list li,
 .cv-list li {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 0.75rem;
-    padding-left: 0; /* default for small screens */
+    gap: 12px;
+    padding-left: 0;
 }
 
-/* Add left padding only on larger screens */
 @media (min-width: 600px) {
-    .contact-list li,
     .cv-list li {
         padding-left: 8px;
     }
 }
 
 .cv-list img {
-    height: 60px;               /* Make them visibly larger */
-    width: auto;                /* Keep aspect ratio */
-    background-color: #ffffff;  /* Ensure visibility on dark theme */
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
     padding: 6px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.4);
-    margin-right: 12px;
     flex-shrink: 0;
+    object-fit: contain;
 }
 
 .contact-list li a,
