@@ -177,3 +177,12 @@ ul li {
     height: 100%;
     border: 0;
 }
+
+
+@media (max-width: 600px) {
+    .cv-list img {
+        width: 40px;
+        height: 40px;
+        padding: 4px;
+    }
+}
